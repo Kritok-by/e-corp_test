@@ -69,3 +69,5 @@ const swiperThree = new Swiper('.swiper-about-temmate', {
     prevEl: '.they-button-prev',
   },
 });
+
+new WOW().init();

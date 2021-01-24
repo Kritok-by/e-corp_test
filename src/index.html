@@ -757,16 +757,12 @@
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script src="./js/main.js" type="module"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="./js/main.js"></script>
     <script>
-      new WOW().init();
       function initMap() {
-        var e = {
-          lat: 53.93735897216656,
-          lng: 27.447394455980042,
-        };
-        t = new google.maps.Map(document.getElementById('map'), {
+        const e = { lat: 53.93735897216656, lng: 27.447394455980042 };
+        const t = new google.maps.Map(document.getElementById('map'), {
           zoom: 13,
           center: e,
           scrollwheel: false,
@@ -777,10 +773,7 @@
           mapTypeId: google.maps.MapTypeId.ROADMAP,
           disableDefaultUI: true,
         });
-        new google.maps.Marker({
-          position: e,
-          map: t,
-        });
+        new google.maps.Marker({ position: e, map: t });
       }
     </script>
     <script

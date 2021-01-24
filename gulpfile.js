@@ -8,6 +8,7 @@ const browserSync = require('browser-sync').create();
 const fileInclude = require('gulp-file-include');
 const webpackStream = require('webpack-stream');
 const uglify = require('gulp-uglify-es').default;
+const htmlmin = require('gulp-htmlmin');
 
 const styles = () =>
   src('./src/scss/**/*.scss')
@@ -40,6 +41,12 @@ const htmlInclude = () =>
       fileInclude({
         prefix: '@',
         basepath: '@file ',
+      })
+    )
+    .pipe(
+      htmlmin({
+        collapseWhitespace: true,
+        removeComments: true,
       })
     )
     .pipe(dest('./app'))

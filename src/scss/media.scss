@@ -1,0 +1,66 @@
+@media (max-width: 991px) {
+  .wrapper {
+    .about-us {
+      .row {
+        justify-content: center;
+        .about-us-description {
+          padding: 0;
+          text-align: center;
+        }
+      }
+    }
+    .our-services {
+      .cards {
+        .container-lg {
+          width: 90%;
+        }
+      }
+    }
+    .small-team {
+      .row {
+        justify-content: center;
+      }
+    }
+    .what-they-says {
+      .row {
+        justify-content: center;
+        .they-button {
+          &-prev {
+            left: 35%;
+            transform: translateX(-50%);
+          }
+          &-next {
+            left: 65%;
+            transform: translateX(-50%);
+          }
+        }
+      }
+    }
+    .contact-us {
+      .row {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .wrapper {
+    .our-services {
+      .col-md-5 .card {
+        &_preview,
+        &_description {
+          padding: 55px 8.5%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .wrapper {
+    .about-us .row .swiper-about-us .bg {
+      min-width: 0;
+    }
+  }
+}

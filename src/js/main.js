@@ -5,7 +5,7 @@ const teamCards = team.querySelectorAll('.card');
 const bg = './img/service-bg-';
 
 firstCards.forEach((i, ix) => {
-  i.style.backgroundImage = `url(${bg + ++ix}.png)`;
+  i.style.backgroundImage = `url(${bg + ++ix}-min.png)`;
   const open = i.querySelector('.open');
   const close = i.querySelector('.close');
   const modal = i.querySelector('.card_description');

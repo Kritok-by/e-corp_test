@@ -118,6 +118,7 @@ body {
             background: transparent;
             img {
               box-shadow: 3px 9px 10px rgba(0, 0, 0, 0.1);
+              height: 100%;
             }
           }
         }
@@ -172,8 +173,11 @@ body {
     .subheader {
       margin-bottom: 120px;
     }
-    img {
-      margin: 12px 0;
+    .row {
+      justify-content: center;
+      img {
+        margin: 12px 0;
+      }
     }
   }
   .our-services {
@@ -270,6 +274,7 @@ body {
           p {
             color: #1c3d3a;
             margin-bottom: 0;
+            text-overflow: ellipsis;
           }
           button {
             background: none;
@@ -382,7 +387,8 @@ body {
         .bg {
           top: 45px;
           height: 80%;
-          left: 0;
+          left: 50%;
+          transform: translateX(-50%);
           width: 100%;
           position: absolute;
           background-color: #000;

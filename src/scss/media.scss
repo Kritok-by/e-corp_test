@@ -4,7 +4,7 @@
       .row {
         justify-content: center;
         .about-us-description {
-          padding: 0;
+          padding: 2.5%;
           text-align: center;
         }
       }
@@ -59,8 +59,126 @@
 
 @media (max-width: 500px) {
   .wrapper {
-    .about-us .row .swiper-about-us .bg {
-      min-width: 0;
+    .container {
+      width: 95%;
+      &-lg {
+        margin: 0 auto;
+      }
+    }
+    header {
+      padding-top: 0;
+      nav.navbar-light {
+        .navbar-nav.nav-list {
+          padding: 0;
+        }
+      }
+      .main-present {
+        padding-top: 220px;
+        padding-bottom: 50px;
+        h1 {
+          font-size: 25px;
+          line-height: 35px;
+        }
+      }
+    }
+    .about-us {
+      padding-top: 50px;
+      .subheader {
+        margin-bottom: 50px;
+      }
+      .row .swiper-about-us {
+        height: 400px;
+        .swiper-wrapper .swiper-slide img {
+          width: 100%;
+          max-width: 350px;
+        }
+        .bg {
+          min-width: 0;
+        }
+      }
+    }
+    .featured-works {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .subheader {
+        margin-bottom: 50px;
+      }
+    }
+    .our-services {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .cards .card_description p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        display: -webkit-box;
+        -webkit-line-clamp: 9;
+        -webkit-box-orient: vertical;
+        line-clamp: 9;
+        box-orient: vertical;
+        font-size: 12px;
+      }
+    }
+    .small-team {
+      padding-top: 50px;
+      padding-bottom: 50px;
+      .subheader {
+        margin-bottom: 50px;
+      }
+      .row .card .discription {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        span {
+          display: block;
+          span {
+            display: none;
+          }
+        }
+        p {
+          font-size: 12px;
+        }
+      }
+    }
+    .what-they-says {
+      padding-top: 50px;
+      .subheader {
+        margin-bottom: 50px;
+      }
+      .row {
+        .swiper-avatars {
+          height: 350px;
+          .swiper-slide img {
+            width: 100%;
+            max-width: 320px;
+          }
+          .bg {
+            width: 95%;
+            max-width: 400px;
+          }
+        }
+        .swiper-about-temmate .swiper-wrapper .swiper-slide {
+          span {
+            display: block;
+            span {
+              display: none;
+            }
+          }
+          p {
+            font-size: 12px;
+            line-height: 16px;
+          }
+        }
+      }
+    }
+    .partners {
+      padding: 50px 0;
+    }
+    .contact-us {
+      padding: 50px 0;
+    }
+    footer {
+      padding: 50px 0;
     }
   }
 }
